@@ -1,0 +1,51 @@
+.container {
+    position: relative;
+    top: 1em;
+    max-width: 70%;
+    height: 50rem;
+    margin: 0 auto;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(190, 190, 190);
+}
+
+#backgroundBorder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 10rem;
+    width: 10rem;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    z-index: 1;
+}
+
+#background {
+    position: absolute;
+    top: 51.3%;
+    left: 51.6%;
+    transform: translate(-50%, -50%);
+    height: 9rem;
+    width: 9rem;
+    background-color: black;
+    z-index: 2;
+}
+
+#colorTrafficLight {
+    position: absolute;
+    top: 51.3%;
+    left: 51.6%;
+    transform: translate(-50%, -50%);
+    height: 9rem;
+    width: 9rem;
+    background-color: red;
+    border-radius: 100%;
+    z-index: 3;
+    border: none;
+}
