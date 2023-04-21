@@ -1,15 +1,8 @@
-let nrOfColors = 0;
+const colors = ["yellow", "green", "red"];
+let currentColorIndex = 0;
 let colorTrafficLight = document.getElementById("colorTrafficLight");
 
 function changingColors() {
-    if (nrOfColors == 0) {
-        colorTrafficLight.style.backgroundColor = "yellow";
-        nrOfColors = 1;
-    } else if (nrOfColors == 1) {
-        colorTrafficLight.style.backgroundColor = "green";
-        nrOfColors = -1;
-    } else {
-        colorTrafficLight.style.backgroundColor = "red";
-        nrOfColors = 0;
-    }
+    colorTrafficLight.style.backgroundColor = colors[currentColorIndex];
+    currentColorIndex = (currentColorIndex + 1) % colors.length;
 }
